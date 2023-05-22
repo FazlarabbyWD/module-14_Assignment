@@ -23,6 +23,7 @@ Route::post("/questiontwo",[AssignmentController::class,'two'])->name('question.
 Route::get("/questionthree/{page}",[AssignmentController::class,'three'])->name('question.three');
 Route::get("/questionfour",[AssignmentController::class,'four'])->name('question.four');
 Route::post("/questionfive",[AssignmentController::class,'five'])->name('question.five');
+Route::post("/questionsix",[AssignmentController::class,'six'])->name('question.six');
 
 
 Route::get("/submit",[AssignmentController::class,'seven'])->name('question.seven');

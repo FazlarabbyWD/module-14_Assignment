@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post("/questionone",[AssignmentController::class,'one'])->name('question.one');
+Route::post("/questiontwo",[AssignmentController::class,'two'])->name('question.two');
+Route::get("/questionthree/{page}",[AssignmentController::class,'three'])->name('question.three');
+Route::get("/questionfour",[AssignmentController::class,'four'])->name('question.four');
+Route::post("/questionfive",[AssignmentController::class,'five'])->name('question.five');
+Route::post("/questionsix",[AssignmentController::class,'six'])->name('question.six');
+
+
+Route::get("/submit",[AssignmentController::class,'seven'])->name('question.seven');
+
+
+
